@@ -7,19 +7,28 @@ program
 
 program
   .option("-i, --input", "Input SAPS .csv file")
-  .action((inputFilename: string) => {
-    fs.readFile(inputFilename, (error, fileContent) => {
-      if (error) {
-        console.error(error);
+  .option("-o, --output", "Output .csv file");
+
+program
+  .action((inputFilename: string, outputFilename: string) => {
+    fs.readFile(inputFilename, (readError, fileContent) => {
+      if (readError) {
+        console.error(readError);
         process.exit(1);
-      } else {
-        const csvProps = detectCsv(fileContent);
-        if (csvProps === null) {
-          console.error("Input SAPS file is not a .csv file.");
-        } else {
-          console.error("Prepare to extract data.");
-        }
       }
+
+      const csvProps = detectCsv(fileContent);
+      if (csvProps === null) {
+        console.error("Input SAPS file is not a .csv file.");
+        process.exit(1);
+      }
+
+      fs.writeFile(outputFilename, fileContent, (writeError) => {
+        if (writeError) {
+          console.error(writeError);
+          process.exit(1);
+        }
+      });
     });
   });
 
