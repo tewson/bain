@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- '6'
+cache:
+  directories:
+  - node_modules
+deploy:
+  provider: npm
+  email: tewson.seeoun@gmail.com
+  api_key:
+    secure: NyCL6WfOfFfITvr7DQonDNmXv7GQC0Az42y2wJGD8RQzTZC9UjRUXaNCU84pDbeUMU+ITwSlDp76GqxmVqxgMGWEG0isacpS4fel1gdA1ZuzHRoqQ3k06bvSwlB5Rwx1HzjdeVkV9aRwhRR8o+XtGivRJO0Bulxq7mEUFDaNcV8CTn9hJYy2438CIopWZXqoTTd+5JaQmBfzg5B1+9YxIPUE0aOn+zcZOqye1EsIb3KSScTTRcgc729zpLXwUmK23/k2gqj6i6fd+Xie3rDqOcDcMk2w6mAqW6yzZs/9phBUu6xAXtobc0ZA03EjV0jme0NejXDXhrxlG1ChYJFpy6lRBpl4Lq2rFR8SXrRJ+MHKcjka5wXmKyyhgwfblnaIJ5CcF3fGE4L0/2Os07kZLI5HeISYvyg/epY3yGStmiiDoCFHYT9oe7KflZoOOiVigMzbK7zdOYir4VynpZ1m714ur7Lc4aqKITZwHSl74RBybSBOzFuUnVnpR0SvSlrzGFNPXXT1NmY+pKUlVW/2XMWDowyqGFN/xSbrsnpaXqCDQABuRlm/PRY+lG8/TDXvixU5H3vwKAWahRYm/cDHgnROAPfMmJtMaoHN/Llxefnlj2raO1XjGxBwrQjItSlXCoNdhX8Bzgfx0g4Nw8WCZDjmM4rb2azo8CNcBnMHLmQ=
+  on:
+    tags: true
+    repo: tewson/ireland-census-2016-tools
