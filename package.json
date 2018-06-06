@@ -1,6 +1,6 @@
 {
   "name": "ireland-census-2016-tools",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A collection of command line tools for extracting data from Ireland Census 2016 results",
   "bin": {
     "extract-small-area-boundaries": "./lib/extract-small-area-boundaries.js"
