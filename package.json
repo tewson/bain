@@ -1,5 +1,5 @@
 {
-  "name": "ireland-census-2016",
+  "name": "ireland-census-2016-tools",
   "version": "1.0.0",
   "description": "A collection of command line tools for extracting data from Ireland Census 2016 results",
   "bin": {
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tewson/ireland-census-2016.git"
+    "url": "git+https://github.com/tewson/ireland-census-2016-tools.git"
   },
   "keywords": [
     "Ireland",
@@ -23,9 +23,9 @@
   "author": "Tewson Seeoun <tewson.seeoun@gmail.com> (https://tewson.github.io)",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/tewson/ireland-census-2016/issues"
+    "url": "https://github.com/tewson/ireland-census-2016-tools/issues"
   },
-  "homepage": "https://github.com/tewson/ireland-census-2016#readme",
+  "homepage": "https://github.com/tewson/ireland-census-2016-tools#readme",
   "dependencies": {
     "@types/node": "^8.0.25",
     "commander": "^2.11.0"
