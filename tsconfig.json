@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
     "noImplicitAny": true,
+    "lib": [
+      "es2015.core",
+      "es5"
+    ],
     "outDir": "./lib",
     "strict": true,
     "target": "es5"

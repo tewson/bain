@@ -2,10 +2,12 @@
   "name": "ireland-census-2016",
   "version": "1.0.0",
   "description": "A command line tool for extracting Irish census data",
-  "main": "dist/index.js",
+  "bin": {
+    "extract-small-area-boundaries": "./lib/extract-small-area-boundaries.js"
+  },
   "scripts": {
     "clean": "rimraf dist",
-    "dev": "npm run clean && tsc -w",
+    "build:watch": "npm run clean && tsc -w",
     "build": "npm run clean && tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,17 +20,15 @@
     "census",
     "data"
   ],
-  "author": "Tewson Seeoun",
+  "author": "Tewson Seeoun <tewson.seeoun@gmail.com> (https://tewson.github.io)",
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/tewson/ireland-census-2016/issues"
   },
   "homepage": "https://github.com/tewson/ireland-census-2016#readme",
   "dependencies": {
-    "@types/commander": "^2.9.2",
     "@types/node": "^8.0.25",
-    "commander": "^2.11.0",
-    "detect-csv": "^1.1.0"
+    "commander": "^2.11.0"
   },
   "devDependencies": {
     "rimraf": "^2.6.1",
